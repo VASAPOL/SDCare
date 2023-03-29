@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Photos
 
 struct Setting_View: View {
+    @State private var photoPickerIsPresented = false
+    @State var pickerResult: [UIImage] = []
     var body: some View {
         NavigationView{
             GeometryReader{geo in
@@ -15,22 +18,51 @@ struct Setting_View: View {
                     HStack{
                         HStack{
                             Button(action: {
-                                
+                                photoPickerIsPresented = true
                             }, label: {
-                                RoundedRectangle(cornerRadius: 15)
-                                    .frame(width: geo.size.width/2.2, height: geo.size.width/2.2)
-                                    .foregroundColor(.black)
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: geo.size.width/2.2, height: geo.size.width/2.2)
+                                        .foregroundColor(.black)
+                                    ForEach(pickerResult, id: \.self) { uiImage in
+                                      Image(uiImage: uiImage)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: geo.size.width/2.2, height: geo.size.width/2.2)
+                                            .clipped()
+                                            .cornerRadius(15)
+                                            .onAppear(perform: {
+                                                self.saveImage()
+                                            })
+                                    }
+                                }
                             })
                         }
                         User_Information_View()
                     }
                     Medical_Info()
-                }
+                    Hospitality_uses()
+                }.sheet(isPresented: $photoPickerIsPresented) {
+                    PhotoPicker(pickerResult: $pickerResult,
+                                isPresented: $photoPickerIsPresented)
+                  }
             }
             .padding(.horizontal)
         }
     }
+    func saveImage() {
+        guard let data = pickerResult[0].jpegData(compressionQuality: 0.5) else { return }
+        let encoded = try! PropertyListEncoder().encode(data)
+        UserDefaults.standard.set(encoded, forKey: "KEY")
+    }
+
+    func loadImage() {
+         guard let data = UserDefaults.standard.data(forKey: "KEY") else { return }
+         let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
+         let pickerResult = UIImage(data: decoded)
+    }
 }
+
 
 struct Medical_Info: View{
     @State private var Height = ""
@@ -59,30 +91,34 @@ struct Medical_Info: View{
             HStack{
                 Text("BMI: ")
                     .bold()
-                Text("\(BMI, specifier: "%.2f")")
+                if BMI == 0.00{
+                    Text("Unable to calculate")
+                }else{
+                    Text("\(BMI, specifier: "%.2f")")
+                }
                 Spacer()
             }
             HStack{
                 Text("Alcohol Consumption: ")
                     .bold()
-                Text(UserDefaults.standard.string(forKey: "Alcohol Consumption") ?? "")
+                Text(UserDefaults.standard.string(forKey: "Alcohol Consumption") ?? "Unset")
                 Spacer()
             }
             HStack{
                 Text("Medical Condition: ")
                     .bold()
-                Text(UserDefaults.standard.string(forKey: "Medical Conditions") ?? "")
+                Text(UserDefaults.standard.string(forKey: "Medical Conditions") ?? "Unset")
                 Spacer()
             }
             HStack{
                 Text("Medical health Condition: ")
                     .bold()
-                Text(UserDefaults.standard.string(forKey: "Medical health conditions") ?? "")
+                Text(UserDefaults.standard.string(forKey: "Medical health conditions") ?? "Unset")
                 Spacer()
             }
         }.onAppear(perform: {
-            Height = UserDefaults.standard.string(forKey: "Height") ?? ""
-            Weight = UserDefaults.standard.string(forKey: "Weight") ?? ""
+            Height = UserDefaults.standard.string(forKey: "Height") ?? "Unset"
+            Weight = UserDefaults.standard.string(forKey: "Weight") ?? "Unset"
             if let weight = Double(Weight), let height = Double(Height) {
                 let prier_tem:Double = height*height
                 let bmi:Double = prier_tem/10000
@@ -340,7 +376,6 @@ struct Edit_data:View{
                         .onAppear(perform: {
                             textInput = UserDefaults.standard.string(forKey: topic) ?? "Unset"
                         })
-                        .keyboardType(.decimalPad)
                         .onDisappear(perform: {
                             if textInput != ""{
                                 UserDefaults.standard.set(textInput, forKey: topic)
@@ -348,6 +383,91 @@ struct Edit_data:View{
                         })
                 }
                 
+            }
+        }
+    }
+}
+
+struct Hospitality_uses: View{
+    @State private var isShowingAdd = false
+    @State private var Topic_Input = "jhugfdihfomjghkfpekhfdoskdlbnvkodfglfnjkgdopjfknbvckxlv,mkxblgdfmxdklgvbifjvdbfxuhiojrtdfgdoijuv8hirusdnsvz8f"
+    @State private var Information_Input = "jhugfdihfomjghkfpekhfdoskdlbnvkodfglfnjkgdopjfknbvckxlv,mkxblgdfmxdklgvbifjvdbfxuhiojrtdfgdoijuv8hirusdnsvz8f"
+    var Topic_dat: [String] = UserDefaults.standard.object(forKey: "Hospitality_uses_Topic_Input") as? [String] ?? []
+    var Info_Dat: [String] = UserDefaults.standard.object(forKey: "Hospitality_uses_Information_Input") as? [String] ?? []
+    var Time_Dat: [String] = UserDefaults.standard.object(forKey: "Hospitality_uses_TimeStamp") as? [String] ?? []
+    var body: some View{
+        VStack{
+            HStack{
+                Text("Hospitality uses")
+                    .font(.title)
+                    .bold()
+                Spacer()
+            }
+            Button(action: {
+                self.isShowingAdd = true
+            }, label: {
+                ZStack{
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 50)
+                        .foregroundColor(.blue)
+                    HStack{
+                        Image(systemName: "plus")
+                            .foregroundColor(.white)
+                            .bold()
+                        Text("Add news")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
+            })
+            ForEach(Topic_dat, id: \.self){ sss in
+                
+            }
+        }.sheet(isPresented: $isShowingAdd) {
+            NavigationView{
+                VStack{
+                    HStack{
+                        Text("Location :")
+                            .bold()
+                        Spacer()
+                    }.padding(.leading)
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .foregroundColor(.black)
+                            .opacity(0.1)
+                        TextField("Add header detail", text: $Topic_Input)
+                            .padding(.horizontal)
+                    }.frame(height: 40)
+                    .padding(.horizontal)
+                        HStack{
+                            Text(Date.now.formatted(date: .long, time: .shortened))
+                            Spacer()
+                        }.padding(.leading)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 15)
+                                .foregroundColor(.black)
+                                .opacity(0.1)
+                            VStack{
+                                TextField("Add header detail", text: $Information_Input,axis: .vertical)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .lineLimit(nil)
+                                    .padding(.horizontal)
+                                Spacer()
+                            }
+                            .padding(.top)
+                        }
+                        .padding(.horizontal)
+                    
+                }
+                    .navigationBarTitle(Text("Notifications"), displayMode: .inline)
+                    .navigationBarItems(trailing:
+                                            Button(action: {
+                        //self.Topic_dat.append(Topic_Input)
+                        self.isShowingAdd = false
+                    }) {
+                        Text("Save")
+                    }
+                    )
             }
         }
     }

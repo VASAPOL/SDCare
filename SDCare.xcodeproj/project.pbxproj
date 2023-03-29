@@ -18,6 +18,11 @@
 		733E4B1F29BF6C87005E128F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E4B1E29BF6C87005E128F /* HomeView.swift */; };
 		733E4B2229BF9814005E128F /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E4B2129BF9814005E128F /* AnalogClockView.swift */; };
 		733E4B2429BF982A005E128F /* Time_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E4B2329BF982A005E128F /* Time_View.swift */; };
+		7363003429CB790400D13CF5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363003329CB790400D13CF5 /* ImagePicker.swift */; };
+		737206AA29CF616200451277 /* Report_View_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206A929CF616200451277 /* Report_View_2.swift */; };
+		737206AC29CF6BA300451277 /* ReportViewJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */; };
+		737206AF29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */; };
+		739A4F0129CF2647009DDBB8 /* HomeScreenJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */; };
 		73FE5DFA29CAF85B0000CA77 /* Setting_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE5DF929CAF85B0000CA77 /* Setting_View.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		733E4B1E29BF6C87005E128F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		733E4B2129BF9814005E128F /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 		733E4B2329BF982A005E128F /* Time_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_View.swift; sourceTree = "<group>"; };
+		7363003329CB790400D13CF5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		737206A929CF616200451277 /* Report_View_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_View_2.swift; sourceTree = "<group>"; };
+		737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewJsonDecoder.swift; sourceTree = "<group>"; };
+		737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewGraphHeartrateJsonDecoder.swift; sourceTree = "<group>"; };
+		739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenJsonDecoder.swift; sourceTree = "<group>"; };
 		73FE5DF929CAF85B0000CA77 /* Setting_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,12 +115,15 @@
 		731CD2C229AA6E9000F29A26 /* SDCare */ = {
 			isa = PBXGroup;
 			children = (
+				739A4EFF29CF2632009DDBB8 /* Backend */,
 				731CD2C329AA6E9000F29A26 /* SDCareApp.swift */,
 				731CD2C529AA6E9000F29A26 /* ContentView.swift */,
 				733E4B2329BF982A005E128F /* Time_View.swift */,
 				73FE5DF929CAF85B0000CA77 /* Setting_View.swift */,
+				7363003329CB790400D13CF5 /* ImagePicker.swift */,
 				733E4B1E29BF6C87005E128F /* HomeView.swift */,
 				733E4B1C29BF6C69005E128F /* Report_View.swift */,
+				737206A929CF616200451277 /* Report_View_2.swift */,
 				733E4B2129BF9814005E128F /* AnalogClockView.swift */,
 				731CD2C729AA6E9100F29A26 /* Assets.xcassets */,
 				731CD2C929AA6E9100F29A26 /* SDCare.entitlements */,
@@ -142,6 +155,16 @@
 				731CD2E129AA6E9100F29A26 /* SDCareUITestsLaunchTests.swift */,
 			);
 			path = SDCareUITests;
+			sourceTree = "<group>";
+		};
+		739A4EFF29CF2632009DDBB8 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */,
+				737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */,
+				737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */,
+			);
+			path = Backend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737206AC29CF6BA300451277 /* ReportViewJsonDecoder.swift in Sources */,
+				739A4F0129CF2647009DDBB8 /* HomeScreenJsonDecoder.swift in Sources */,
 				731CD2C629AA6E9000F29A26 /* ContentView.swift in Sources */,
 				733E4B1F29BF6C87005E128F /* HomeView.swift in Sources */,
+				737206AA29CF616200451277 /* Report_View_2.swift in Sources */,
+				737206AF29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift in Sources */,
 				731CD2C429AA6E9000F29A26 /* SDCareApp.swift in Sources */,
 				73FE5DFA29CAF85B0000CA77 /* Setting_View.swift in Sources */,
 				733E4B2429BF982A005E128F /* Time_View.swift in Sources */,
+				7363003429CB790400D13CF5 /* ImagePicker.swift in Sources */,
 				733E4B2229BF9814005E128F /* AnalogClockView.swift in Sources */,
 				733E4B1D29BF6C69005E128F /* Report_View.swift in Sources */,
 			);
@@ -435,7 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SDCare/SDCare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SDCare/Preview Content\"";
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -451,7 +479,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -460,9 +489,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SDCare/SDCare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SDCare/Preview Content\"";
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -489,7 +520,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -498,9 +530,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -513,6 +547,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add profile to software";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
@@ -536,6 +571,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add profile to software";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;

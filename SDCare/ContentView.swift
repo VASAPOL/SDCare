@@ -16,7 +16,7 @@ struct ContentView: View {
                     .tabItem{
                         Label("Home", systemImage: "house")
                     }
-                Report_View()
+                Report_View_2()
                     .tabItem{
                         Label("Report", systemImage: "chart.bar")
                     }
