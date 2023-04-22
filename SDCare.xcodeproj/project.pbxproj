@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7316BCF529F03E6C008FF5AD /* ReportViewGraphSpo2JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316BCF429F03E6C008FF5AD /* ReportViewGraphSpo2JsonDecoder.swift */; };
 		731CD2C429AA6E9000F29A26 /* SDCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CD2C329AA6E9000F29A26 /* SDCareApp.swift */; };
 		731CD2C629AA6E9000F29A26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CD2C529AA6E9000F29A26 /* ContentView.swift */; };
 		731CD2C829AA6E9100F29A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731CD2C729AA6E9100F29A26 /* Assets.xcassets */; };
@@ -19,10 +20,15 @@
 		733E4B2229BF9814005E128F /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E4B2129BF9814005E128F /* AnalogClockView.swift */; };
 		733E4B2429BF982A005E128F /* Time_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E4B2329BF982A005E128F /* Time_View.swift */; };
 		7363003429CB790400D13CF5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363003329CB790400D13CF5 /* ImagePicker.swift */; };
+		7363B91F29D9C3600099F15D /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363B91E29D9C3600099F15D /* SleepView.swift */; };
+		7363B92429D9D0500099F15D /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 7363B92329D9D0500099F15D /* SwiftfulLoadingIndicators */; };
 		737206AA29CF616200451277 /* Report_View_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206A929CF616200451277 /* Report_View_2.swift */; };
 		737206AC29CF6BA300451277 /* ReportViewJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */; };
 		737206AF29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */; };
 		739A4F0129CF2647009DDBB8 /* HomeScreenJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */; };
+		73BAFAD229D5DE7600F86166 /* White Noise 500Hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73BAFAD029D5DE7600F86166 /* White Noise 500Hz.mp3 */; };
+		73BAFAD329D5DE7600F86166 /* Pink noise TED.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73BAFAD129D5DE7600F86166 /* Pink noise TED.mp3 */; };
+		73BD432129F43825007CAC46 /* Alam Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73BD432029F43825007CAC46 /* Alam Audio.mp3 */; };
 		73FE5DFA29CAF85B0000CA77 /* Setting_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE5DF929CAF85B0000CA77 /* Setting_View.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7316BCF429F03E6C008FF5AD /* ReportViewGraphSpo2JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewGraphSpo2JsonDecoder.swift; sourceTree = "<group>"; };
 		731CD2C029AA6E9000F29A26 /* SDCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731CD2C329AA6E9000F29A26 /* SDCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCareApp.swift; sourceTree = "<group>"; };
 		731CD2C529AA6E9000F29A26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,10 +67,14 @@
 		733E4B2129BF9814005E128F /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 		733E4B2329BF982A005E128F /* Time_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_View.swift; sourceTree = "<group>"; };
 		7363003329CB790400D13CF5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7363B91E29D9C3600099F15D /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 		737206A929CF616200451277 /* Report_View_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_View_2.swift; sourceTree = "<group>"; };
 		737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewJsonDecoder.swift; sourceTree = "<group>"; };
 		737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewGraphHeartrateJsonDecoder.swift; sourceTree = "<group>"; };
 		739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenJsonDecoder.swift; sourceTree = "<group>"; };
+		73BAFAD029D5DE7600F86166 /* White Noise 500Hz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "White Noise 500Hz.mp3"; path = "../../../../../Downloads/White Noise 500Hz.mp3"; sourceTree = "<group>"; };
+		73BAFAD129D5DE7600F86166 /* Pink noise TED.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Pink noise TED.mp3"; path = "../../../../../Downloads/Pink noise TED.mp3"; sourceTree = "<group>"; };
+		73BD432029F43825007CAC46 /* Alam Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Alam Audio.mp3"; path = "../../../../../Downloads/Alam Audio.mp3"; sourceTree = "<group>"; };
 		73FE5DF929CAF85B0000CA77 /* Setting_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7363B92429D9D0500099F15D /* SwiftfulLoadingIndicators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +130,7 @@
 				739A4EFF29CF2632009DDBB8 /* Backend */,
 				731CD2C329AA6E9000F29A26 /* SDCareApp.swift */,
 				731CD2C529AA6E9000F29A26 /* ContentView.swift */,
+				7363B91E29D9C3600099F15D /* SleepView.swift */,
 				733E4B2329BF982A005E128F /* Time_View.swift */,
 				73FE5DF929CAF85B0000CA77 /* Setting_View.swift */,
 				7363003329CB790400D13CF5 /* ImagePicker.swift */,
@@ -160,11 +173,23 @@
 		739A4EFF29CF2632009DDBB8 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				73BAFACF29D5DE6000F86166 /* Sound */,
 				739A4F0029CF2647009DDBB8 /* HomeScreenJsonDecoder.swift */,
 				737206AB29CF6BA300451277 /* ReportViewJsonDecoder.swift */,
 				737206AE29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift */,
+				7316BCF429F03E6C008FF5AD /* ReportViewGraphSpo2JsonDecoder.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		73BAFACF29D5DE6000F86166 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				73BD432029F43825007CAC46 /* Alam Audio.mp3 */,
+				73BAFAD129D5DE7600F86166 /* Pink noise TED.mp3 */,
+				73BAFAD029D5DE7600F86166 /* White Noise 500Hz.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +208,9 @@
 			dependencies = (
 			);
 			name = SDCare;
+			packageProductDependencies = (
+				7363B92329D9D0500099F15D /* SwiftfulLoadingIndicators */,
+			);
 			productName = SDCare;
 			productReference = 731CD2C029AA6E9000F29A26 /* SDCare.app */;
 			productType = "com.apple.product-type.application";
@@ -231,7 +259,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					731CD2BF29AA6E9000F29A26 = {
 						CreatedOnToolsVersion = 14.2;
@@ -256,6 +284,7 @@
 			);
 			mainGroup = 731CD2B729AA6E9000F29A26;
 			packageReferences = (
+				7363B92229D9D0500099F15D /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
 			);
 			productRefGroup = 731CD2C129AA6E9000F29A26 /* Products */;
 			projectDirPath = "";
@@ -274,6 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				731CD2CC29AA6E9100F29A26 /* Preview Assets.xcassets in Resources */,
+				73BAFAD329D5DE7600F86166 /* Pink noise TED.mp3 in Resources */,
+				73BAFAD229D5DE7600F86166 /* White Noise 500Hz.mp3 in Resources */,
+				73BD432129F43825007CAC46 /* Alam Audio.mp3 in Resources */,
 				731CD2C829AA6E9100F29A26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,8 +338,10 @@
 				737206AA29CF616200451277 /* Report_View_2.swift in Sources */,
 				737206AF29CF7AE300451277 /* ReportViewGraphHeartrateJsonDecoder.swift in Sources */,
 				731CD2C429AA6E9000F29A26 /* SDCareApp.swift in Sources */,
+				7363B91F29D9C3600099F15D /* SleepView.swift in Sources */,
 				73FE5DFA29CAF85B0000CA77 /* Setting_View.swift in Sources */,
 				733E4B2429BF982A005E128F /* Time_View.swift in Sources */,
+				7316BCF529F03E6C008FF5AD /* ReportViewGraphSpo2JsonDecoder.swift in Sources */,
 				7363003429CB790400D13CF5 /* ImagePicker.swift in Sources */,
 				733E4B2229BF9814005E128F /* AnalogClockView.swift in Sources */,
 				733E4B1D29BF6C69005E128F /* Report_View.swift in Sources */,
@@ -380,6 +414,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -438,6 +473,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -463,7 +499,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SDCare/SDCare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 12;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SDCare/Preview Content\"";
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -504,7 +541,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SDCare/SDCare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 12;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SDCare/Preview Content\"";
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -545,10 +583,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add profile to software";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vasapol.SDCareTests;
@@ -569,10 +608,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add profile to software";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vasapol.SDCareTests;
@@ -592,9 +632,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vasapol.SDCareUITests;
@@ -614,9 +655,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3LC3M2K977;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vasapol.SDCareUITests;
@@ -670,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7363B92229D9D0500099F15D /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7363B92329D9D0500099F15D /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7363B92229D9D0500099F15D /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 731CD2B829AA6E9000F29A26 /* Project object */;
 }

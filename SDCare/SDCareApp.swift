@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+
+let serverAddr = "49.0.80.223:1845"
+
+
+
 @main
 struct SDCareApp: App {
     var body: some Scene {

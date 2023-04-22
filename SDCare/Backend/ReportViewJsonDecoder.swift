@@ -29,7 +29,7 @@ struct Report_Decoder: Identifiable, Decodable {
 class Report_ViewModel: ObservableObject {
   @Published var items = [Report_Decoder]()
   func fetchData() {
-    let api = "http://184.82.207.10:1845/report_view.json"
+    let api = "http://"+serverAddr+"/report_view.json"
     guard let url = URL(string: api) else { return }
     URLSession.shared.dataTask(with: url) { (data, response, error) in
       do {

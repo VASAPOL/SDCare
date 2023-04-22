@@ -9,12 +9,9 @@ import SwiftUI
 import Charts
 
 
-
-let server_ip = "https://pastebin.com/raw/gWTJLyMr"
-
-
 struct HomeView: View{
     @ObservedObject var HomeScreen_viewModel = HomeScreen_TextViewModel()
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View{
         GeometryReader{ geo in
             VStack{
@@ -81,14 +78,16 @@ struct HomeView: View{
                                             .frame(height: geo.size.width/2)
 
                                     }
-                                    
                                 }
                                 Timeline_UI()
                             }
                         }.padding(.horizontal)
                     }
                 }
-            }.onAppear(perform: {
+            }.onReceive(timer) { time in
+                HomeScreen_viewModel.fetchData()
+            }
+            .onAppear(perform: {
                 HomeScreen_viewModel.fetchData()
             })
         }

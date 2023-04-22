@@ -26,7 +26,7 @@ struct GraphItem: Identifiable, Decodable {
 class HomeScreen_TextViewModel: ObservableObject {
   @Published var items = [HomeScreen_Text]()
   func fetchData() {
-    let api = "http://184.82.207.10:1845/HomeScreen_Info.json"
+    let api = "http://"+serverAddr+"/HomeScreen_Info.json"
     guard let url = URL(string: api) else { return }
     URLSession.shared.dataTask(with: url) { (data, response, error) in
       do {
@@ -49,7 +49,7 @@ class HomeScreen_TextViewModel: ObservableObject {
 class GraphItem_ViewModel: ObservableObject {
   @Published var items = [GraphItem]()
   func fetchData() {
-    let api = "http://184.82.207.10:1845/GraphItem.json"
+    let api = "http://"+serverAddr+"/GraphItem.json"
     guard let url = URL(string: api) else { return }
     URLSession.shared.dataTask(with: url) { (data, response, error) in
       do {
