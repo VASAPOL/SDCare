@@ -67,7 +67,7 @@ struct Report_View_2: View {
                             Button(action: {
                                 self.isSleepPostureisActived = true
                             }, label: {
-                                insideNavigation(image_name: "person.and.background.dotted", image_color: .green, text_color: .green, Topic: "Sleep posture", update_time: Report_Screen_Data.Spo2_update_time, data: Report_Screen_Data.Spo2,unitt: "%")
+                                insideNavigation(image_name: "person.and.background.dotted", image_color: .green, text_color: .green, Topic: "Sleep posture", update_time: Report_Screen_Data.Sleep_posture_update_time, data: Report_Screen_Data.Sleep_posture,unitt: "%")
                             })
                         }
                     }.navigationTitle("Overall night")
